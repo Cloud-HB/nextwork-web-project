@@ -27,12 +27,12 @@ The deployment pipeline I'm building around the Java web app in this repository 
 Here’s what I’m using for this project:
 
 - **Amazon EC2**: I'm developing my web app on Amazon EC2 virtual servers, so that software development and deployment happens entirely on the cloud.
-- Key pairs, SSH connections, Git, Maven and Java.
-- **Key pairs**: Used to securely connect to the EC2 instance. Here--selected key pair: 'nextwork-keypair'. It's comprises of 2 keys: a public key that AWS keeps, and a private key.Once I set up my key pair, AWS automatically downloaded to my local computer the private key file format.pem (i.e Privacy Enhanced Mail) : nextwork-keypair.pem.
-- **SSH connections**: SSH is a secure communication protocol that allows authorized users to access and control remote servers. I enabled SSH so that I can securely connect to my EC2 instance using the private key that matches the public key stored on the server.
-- **Git**: A version control system that tracks changes with snapshots, making it easy to undo mistakes, collaborate, and push code to GitHub from a local repo.
-- **Maven**: Apache Maven is a tool used to build and manage Java projects. It also acts as a package manager, automatically downloading any external libraries your project needs to run.
-- **Java**: Java (version : Amazon Corretto 8 ) is a popular programming language used to build different types of applications, from mobile apps to large enterprise systems. It is required in this project because Maven depends on it to run and to generate the necessary files and templates/archetypes for our web app.
+- Key pairs, SSH connections, Git, Maven and Java :
+   - **Key pairs**: Used to securely connect to the EC2 instance. Here--selected key pair: 'nextwork-keypair'. It's comprises of 2 keys: a public key that AWS keeps, and a private key.Once I set up my key pair, AWS automatically downloaded to my local computer the private key file format.pem (i.e Privacy Enhanced Mail) : nextwork-keypair.pem.
+   - **SSH connections**: SSH is a secure communication protocol that allows authorized users to access and control remote servers. I enabled SSH so that I can securely connect to my EC2 instance using the private key that matches the public key stored on the server.
+   - **Git**: A version control system that tracks changes with snapshots, making it easy to undo mistakes, collaborate, and push code to GitHub from a local repo.
+   - **Maven**: Apache Maven is a tool used to build and manage Java projects. It also acts as a package manager, automatically downloading any external libraries your project needs to run.
+   - **Java**: Java (version : Amazon Corretto 8 ) is a popular programming language used to build different types of applications, from mobile apps to large enterprise systems. It is required in this project because Maven depends on it to run and to generate the necessary files and templates/archetypes for our web app.
 - **VS Code**: For my IDE, I chose Visual Studio Code. It connects directly to my development EC2 instance, making it easy to edit code and manage files in the cloud.
 - **GitHub**: All my web app code is stored and versioned in this GitHub repository.
 - **[COMING SOON] AWS CodeArtifact**: Once it's rolled out, CodeArtifact will store my artifacts and dependencies, which is great for high availability and speeding up my project's build process.
